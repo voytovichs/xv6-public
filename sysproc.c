@@ -89,3 +89,13 @@ sys_uptime(void)
   release(&tickslock);
   return xticks;
 }
+
+int
+sys_user(void)
+{
+  struct segdesc *gdt;
+  if(argptr(0, (void*)&gdt, sizeof(*gdt)) < 0)
+    return -1;
+  *gdt = cpu->gdt[1];
+  return 0;
+}

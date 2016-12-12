@@ -1,3 +1,5 @@
+#include "mmu.h"
+
 struct stat;
 struct rtcdate;
 
@@ -23,6 +25,7 @@ int getpid(void);
 char* sbrk(int);
 int sleep(int);
 int uptime(void);
+int user(struct segdesc*);
 
 // ulib.c
 int stat(char*, struct stat*);
