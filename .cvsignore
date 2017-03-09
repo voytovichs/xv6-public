@@ -6,7 +6,6 @@ kernel
 user1
 userfs
 usertests
-xv6.img
 vectors.S
 bochsout.txt
 bootblock
