@@ -5,8 +5,6 @@ _*
 kernel
 user1
 userfs
-usertests
-vectors.S
 bochsout.txt
 bootblock
 bootother
